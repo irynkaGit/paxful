@@ -1,0 +1,1 @@
+export type IDispatch<T> = typeof Promise | Promise<T> | any;

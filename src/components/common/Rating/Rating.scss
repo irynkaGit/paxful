@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+
+.rating{
+  display: inline-block;
+  &-pros {
+    color: $linkBright;
+    font-weight: bold;
+  }
+
+  &-cons {
+    color: $error;
+    font-weight: bold;
+  }
+}

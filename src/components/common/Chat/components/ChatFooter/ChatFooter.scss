@@ -1,0 +1,68 @@
+@import "src/styles/variables";
+
+.chat-footer {
+  position: absolute;
+  bottom: 20px;
+  left:0;
+  width: 100%;
+
+  &-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin: 0 15px;
+    background: #fff;
+    border: solid 1px #eaebef;
+    @media (max-width: 1280px) {
+      padding: 10px 20px;
+      margin: 0 30px;
+    }
+    @media (max-width: 1024px) {
+      padding: 20px 30px;
+      margin: 0 15px;
+    }
+    @media (max-width: 981px) {
+      padding: 60px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  }
+
+  &-input {
+    border: none;
+    width: 100%;
+    margin: 0 45px;
+    @media (max-width: 1280px) {
+      font-size: 10px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+    @media (max-width: 981px) {
+      font-size: 40px;
+    }
+  }
+  &-btn {
+    border: none;
+    background: $defaultWhite;
+    font-size: 18px;
+    font-weight: bold;
+    color: $linkBright;
+    text-transform: uppercase;
+    @media (max-width: 1280px) {
+      font-size: 10px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+    @media (max-width: 981px) {
+      font-size: 40px;
+    }
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}

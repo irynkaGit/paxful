@@ -1,0 +1,109 @@
+@import "src/styles/variables";
+
+.chat {
+  &-out {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-message {
+    display: flex;
+    width: 90%;
+    margin-bottom: 30px;
+    @media (max-width: 981px) {
+      margin-bottom: 60px;
+    }
+
+    &-text {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 10px;
+      background: $chatMessageDark;
+      border-radius: 5px;
+      color: $linkLight;
+      @media (max-width: 1280px) {
+        font-size: 10px;
+        padding: 10px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 30px;
+        padding: 20px;
+      }
+      @media (max-width: 981px) {
+        font-size: 40px;
+        padding: 40px;
+        border-radius: 20px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 30px;
+        border: 5px solid transparent;
+        border-left: 5px solid $chatMessageDark;
+        @media (max-width: 1280px) {
+          top: 10px
+        }
+        @media (max-width: 1024px) {
+          top: 30px;
+        }
+        @media (max-width: 981px) {
+          top: 60px;
+        }
+      }
+    }
+
+    &-time {
+      text-align: right;
+      color: $linkDark;
+      @media (max-width: 1280px) {
+        font-size: 10px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+    }
+
+    &-avatar {
+      margin-top: 10px;
+      margin-left: 15px;
+      @media (max-width: 1280px) {
+        margin-top: 0;
+      }
+    }
+
+    &-body{
+      width: 100%;
+    }
+
+  }
+
+  &-in {
+    display: flex;
+    justify-content: flex-start;
+
+    .chat-message {
+      &-text {
+        background: $defaultWhite;
+        color: $linkDark;
+
+        &:after {
+          right: auto;
+          left: -5px;
+          border-left: none;
+          border-right: 5px solid #fff;
+        }
+      }
+      &-avatar {
+        margin-right: 15px;
+        margin-left: 0;
+      }
+      &-time {
+        text-align: left;
+      }
+    }
+  }
+
+
+}

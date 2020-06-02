@@ -1,0 +1,14 @@
+.chat-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 73%;
+  overflow: hidden;
+}
+.chat-body-container {
+  padding: 40px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=ChatBody.css.map */

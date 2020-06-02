@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.main {
+  &-container {
+    margin: 0 auto;
+    max-width: $containerSize;
+    width: 100%;
+  }
+}

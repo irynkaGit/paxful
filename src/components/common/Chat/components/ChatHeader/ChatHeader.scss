@@ -1,0 +1,107 @@
+@import "src/styles/variables";
+
+.chat {
+  &-header {
+    position: relative;
+    padding: 30px 0;
+    margin: 0 40px;
+    width: 88%;
+    border-bottom: solid 1px $borderGray;
+    text-align: center;
+    @media (max-width: 1280px) {
+      padding: 15px 0;
+    }
+    @media (max-width: 1024px) {
+      padding: 30px 0;
+    }
+    @media (max-width: 981px) {
+      width: 70%;
+      border-bottom: none;
+      margin: 0;
+      padding-top: 0;
+    }
+  }
+  &-btn{
+    position: absolute;
+  }
+  &-delete {
+    height: 45px;
+    width: 45px;
+    background: $deleteBtn;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    @media (max-width: 1280px) {
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+    }
+    @media (max-width: 1024px) {
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+    }
+    @media (max-width: 981px) {
+      height: 120px;
+      width: 120px;
+      line-height: 120px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+  }
+
+  &-image {
+    height: 20px;
+    @media (max-width: 1280px) {
+      height: 15px;
+      width: 15px;
+    }
+    @media (max-width: 1024px) {
+      height: 40px;
+      width: 40px;
+    }
+    @media (max-width: 981px) {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  &-pay-system {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: $linkDark;
+    @media (max-width: 1680px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1280px) {
+      font-size: 12px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+    @media (max-width: 981px) {
+      font-size: 40px;
+    }
+  }
+
+  &-man {
+    font-size: 18px;
+    color: $textGreyLight;
+    @media (max-width: 1680px) {
+      font-size: 14px;
+    }
+    @media (max-width: 1280px) {
+      font-size: 10px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+    @media (max-width: 981px) {
+      font-size: 40px;
+    }
+  }
+
+}

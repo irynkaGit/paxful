@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+
+.chat {
+  position: relative;
+  width: 70%;
+  background: $chatBackGround;
+  @media (max-width: 1024px) {
+    width: 100%;
+    order: 2;
+    height: 72%;
+  }
+  @media (max-width: 981px) {
+    height: 96%;
+  }
+}

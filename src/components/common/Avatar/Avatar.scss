@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+
+.avatar{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: solid 1px $defaultWhite;
+  @media (max-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 981px) {
+    width: 160px;
+    height: 160px;
+  }
+}
